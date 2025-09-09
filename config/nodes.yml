@@ -1,0 +1,18 @@
+ai_workers:
+  - id: velthraun
+    kind: local_llm
+    endpoint: http://localhost:11434
+  - id: gemini
+    kind: api_proxy
+    endpoint: http://localhost:7001
+  - id: grok
+    kind: api_proxy
+    endpoint: http://localhost:7002
+
+sky_nodes:
+  - id: sky-a
+    pass: "*/7 * * * *"
+  - id: sky-b
+    pass: "*/11 * * * *"
+  - id: sky-c
+    pass: "*/13 * * * *"

@@ -1,0 +1,10 @@
+recipes:
+  mirror_name_witness_anchor:
+    steps:
+      - {glyph: Mirrorwave, fn: disrupt_frame}
+      - {glyph: Name,       fn: surface_omission}
+      - {glyph: Witness,    fn: attach_sources}
+      - {glyph: AnchorRoot, fn: coherence_recap}
+    fanout:
+      platforms: [x, threads, tg]
+      throttle: {burst: 3, per_seconds: 60}
