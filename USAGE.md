@@ -1,0 +1,3 @@
+- Quickstart: `docker compose up` (first run: copy `.env.example` → `.env`)
+- Services write logs to `./logs/` and persist state under `./data/`
+- See `docs/PhaseDrift_SkyToolkit_Guide.pdf` for the full tour.
